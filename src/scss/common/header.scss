@@ -1,0 +1,113 @@
+.header {
+    background-color: rgba(0, 43, 69, 0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.header__wrap {
+    position: relative;
+    min-height: 125px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    @media (max-width: 767px) {
+        min-height: 80px;
+    }
+}
+
+.header__logo {
+    margin-right: 34px;
+    flex: 0 1 177px;
+    @media (max-width: 767px) {
+        flex: 0 1 100px;
+    }
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    @media (max-width: 1023px) {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+}
+
+.header__social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-right: 20px;
+
+    &-icn {
+        &:hover {
+            svg {
+                --icon-color-social: #FBF6EF;
+                --icon-background-social: #002B45;
+            }
+        }
+        &:active {
+            svg {
+                --icon-color-social: #fff;
+                --icon-background-social: #011A2A;
+            }
+        }
+    }
+}
+
+.header__phone {
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    &:hover {
+        color: var(--color-gold);
+    }
+}
+
+.header__ya-maps {
+    width: 181px;
+    @media (max-width: 1023px) {
+        position: absolute;
+        bottom: 50px;
+    }
+}
+
+.header__addr {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.header__addr-text {
+    margin-right: 73px;
+
+    &--first {
+        font-weight: 700;
+    }
+
+    &--second {
+        font-weight: 400;
+    }
+}
+
+.header__btn {
+    height: 49px;
+    padding: 0 26px;
+    margin-left: 19px;
+    border-color: #fff;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    @media (max-width: 1023px) {
+        margin-left: 0;
+        width: 100%;
+    }
+    &:hover {
+        color: var(--color-gold);;
+        border-color: var(--color-gold);
+    }
+}

@@ -1,0 +1,90 @@
+// @import "utils/stylesheet";
+//@import "./node_modules/normalize.css/normalize";
+
+// @import "mixins/media";
+@import "utils/variables";
+@import "utils/swiper-bundle.min";
+
+
+:root {
+  --color-gold: #F2A22E;
+  --icon-color-social: #002B45;
+  --icon-background-social: #FBF6EF;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-family: 'Lora', serif;
+}
+
+*,
+*::before,
+*::after {
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "NTSomic", sans-serif;
+}
+
+body {
+  color: #002B45;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+
+._container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 150px;
+  @media (max-width: 1919px) {
+    padding: 0 100px;
+  }
+  @media (max-width: 1679px) {
+    padding: 0 50px;
+  }
+  @media (max-width: 1023px) {
+    padding: 0 20px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.vectors {
+  display: none;
+}

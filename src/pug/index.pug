@@ -1,0 +1,610 @@
+extends templates/layout
+
+block main 
+    main
+        section.main-banner
+            ._container
+                .main-banner__wrap
+                    h1.visually-hidden Студия кухни МАРКО
+                    h2.main-banner__title Изготовим роскошную <br> дизайнерскую кухню
+                    .main-banner__message-wrap
+                        .main-banner__message.main-banner__message--1.wow.bounceInLeft Огромный выбор<br> бытовой техники
+                        .main-banner__message.main-banner__message--2.wow.bounceInLeft Изысканный гарнитур<br> любого размера
+                        .main-banner__message.main-banner__message--3.wow.bounceInRight Выдающиеся<br> сорта древесины
+                    .main-banner__price
+                        svg.main-banner__price-pic(width="70" height="70")
+                            use(xlink:href="#icn-wallet")
+                        .main-banner__price-content
+                            span.main-banner__price-text.main-banner__price-text--first Цена на 12-24% ниже,
+                            span.main-banner__price-text.main-banner__price-text--second чем у посредников
+                    .main-banner__footer
+                        span.main-banner__footer-text Рассчитаем стоимость кухни-мечты
+                        a.btn.main-banner__footer-btn(href="") Заказать расчет
+
+
+        section.advantages
+            ._container
+                .advantages__wrap
+                    h2.advantages__title Наши преимущества
+                    .advantages__content
+                        .advantages__item.wow.bounceInUp
+                            svg.advantages__item-icn(width='70' height='70')
+                                use(xlink:href="#icn-adv1")
+                            .advantages__item-block
+                                span.advantages__item-title C 2000 г на рынке
+                                span.advantages__item-text наши кухни выбрали 10 000+ семей
+                        .advantages__item.wow.bounceInUp
+                            svg.advantages__item-icn(width='70' height='70')
+                                use(xlink:href="#icn-adv2")
+                            .advantages__item-block
+                                span.advantages__item-title Сжатые сроки
+                                span.advantages__item-text изготовление кухни от 20 дней
+                        .advantages__item.wow.bounceInUp
+                            svg.advantages__item-icn(width='70' height='60')
+                                use(xlink:href="#icn-adv3")
+                            .advantages__item-block
+                                span.advantages__item-title Дизайн проект
+                                span.advantages__item-text бесплатно за 30 минут
+
+        section.jobs
+            ._container
+                .jobs__wrapper
+                    h2.jobs__title Посмотрите наши работы
+                    .jobs__head
+                        .jobs__head-filter
+                            select.select2-multiple(name="sel-01" id="sel-01")
+                                option
+                                option(value="Прямые") Прямые100
+                                option(value="Угловые") Угловые134
+                                option(value="С островом") С островом250
+                                option(value="Трёхъярусные") Трёхъярусные120
+                                option(value="П-образные") П-образные170
+                            select.select3-multiple(name="sel-02" id="sel-02")
+                                option
+                                option(value="Прямые2") Прямые100
+                                option(value="Угловые2") Угловые134
+                                option(value="С островом2") С островом250
+                                option(value="Трёхъярусные2") Трёхъярусные120
+                                option(value="П-образные2") П-образные170
+                            select.select4-multiple(name="sel-03" id="sel-03")
+                                option
+                                option(value="Прямые3") Прямые100
+                                option(value="Угловые3") Угловые134
+                                option(value="С островом3") С островом250
+                                option(value="Трёхъярусные3") Трёхъярусные120
+                                option(value="П-образные3") П-образные170
+
+                        .jobs__head-btns
+                            button.btn.btn--grey применить
+                            button.btn.btn--white сбросить
+                    .jobs__content
+                        .jobs__item.jobs__item--01
+                            .jobs__item-slider
+                                .swiper.mySwiper2.swiper-01
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                .swiper-inner
+                                    .swiper-count
+                                        .numberSlides.numberSlides1
+                                        .swiper-nav
+                                            .swiper-button-prev.swiper-button-prev-01
+                                                svg(width="20" height="7")
+                                                    use(xlink:href="#arrow-prev")
+                                            .swiper-button-next.swiper-button-next-01
+                                                svg(width="20" height="7")
+                                                    use(xlink:href="#arrow-next")
+                                    .swiper.mySwiper.swiper-01-thumbs
+                                        .swiper-wrapper
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                            .jobs__item-content-wrap
+                                .jobs__item-content.active
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 01
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+                                .jobs__item-content
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 02
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+                                .jobs__item-content
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 03
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+                                .jobs__item-content
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 04
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+                                .jobs__item-content
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 05
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+                        .jobs__item.jobs__item--02
+                            .jobs__item-slider
+                                .swiper.mySwiper2.swiper-02
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                .swiper-inner
+                                    .swiper-count
+                                        .numberSlides.numberSlides2
+                                        .swiper-nav
+                                            .swiper-button-prev.swiper-button-prev-02
+                                                svg(width="20" height="7")
+                                                    use(xlink:href="#arrow-prev")
+                                            .swiper-button-next.swiper-button-next-02
+                                                svg(width="20" height="7")
+                                                    use(xlink:href="#arrow-next")
+                                    .swiper.mySwiper.swiper-02-thumbs
+                                        .swiper-wrapper
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                            .jobs__item-content-wrap
+                                .jobs__item-content.active
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 01
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+                                .jobs__item-content
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 02
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+                                .jobs__item-content
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 03
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+                                .jobs__item-content
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 04
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+                                .jobs__item-content
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 05
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+                        .jobs__item.jobs__item--03
+                            .jobs__item-slider
+                                .swiper.mySwiper2.swiper-03
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                .swiper-inner
+                                    .swiper-count
+                                        .numberSlides.numberSlides3
+                                        .swiper-nav
+                                            .swiper-button-prev.swiper-button-prev-03
+                                                svg(width="20" height="7")
+                                                    use(xlink:href="#arrow-prev")
+                                            .swiper-button-next.swiper-button-next-03
+                                                svg(width="20" height="7")
+                                                    use(xlink:href="#arrow-next")
+                                    .swiper.mySwiper.swiper-03-thumbs
+                                        .swiper-wrapper
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                            .jobs__item-content-wrap
+                                .jobs__item-content.active
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 01
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+                                .jobs__item-content
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 02
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+                                .jobs__item-content
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 03
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+                                .jobs__item-content
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 04
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+                                .jobs__item-content
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 05
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+                        .jobs__item.jobs__item--04
+                            .jobs__item-slider
+                                .swiper.mySwiper2.swiper-04
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                        .swiper-slide
+                                            img(src="img/picture-large.png" alt="")
+                                .swiper-inner
+                                    .swiper-count
+                                        .numberSlides.numberSlides4
+                                        .swiper-nav
+                                            .swiper-button-prev.swiper-button-prev-04
+                                                svg(width="20" height="7")
+                                                    use(xlink:href="#arrow-prev")
+                                            .swiper-button-next.swiper-button-next-04
+                                                svg(width="20" height="7")
+                                                    use(xlink:href="#arrow-next")
+                                    .swiper.mySwiper.swiper-04-thumbs
+                                        .swiper-wrapper
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                                            .swiper-slide
+                                                img(src="img/thumb.png" alt="")
+                            .jobs__item-content-wrap
+                                .jobs__item-content.active
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 01
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+                                .jobs__item-content
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 02
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+                                .jobs__item-content
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 03
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+                                .jobs__item-content
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 04
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+                                .jobs__item-content
+                                    .jobs__item-head
+                                        h3.jobs__item-title Кухня 097 минимализм 05
+                                        span.jobs__item-sibtitle Угловая белая кухня со столешницей под бетон.
+                                    .jobs__item-body
+                                        .jobs__item-list
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Эконом
+                                                span.jobs__item-list-block-price 168 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Стандарт
+                                                span.jobs__item-list-block-price 217 000 р.
+                                            .jobs__item-list-block
+                                                span.jobs__item-list-block-title Премиум
+                                                span.jobs__item-list-block-price 270 000 р.
+                                        .jobs__item-descr Длина кухни: <span class="jobs__item-descr-size">4900 мм</span>
+                                    .jobs__item-btns
+                                        a.btn.btn--blue Подробнее
+                                        a.btn.btn--white.jobs__item-btns-btn Расчет стоимости
+
+

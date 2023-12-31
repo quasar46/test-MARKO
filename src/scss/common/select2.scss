@@ -1,0 +1,113 @@
+.select2-container {
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.select2-container .select2-choice {
+  height: 58px;
+  border: 1px solid #002B45;
+  background: #fff;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 32px;
+  @media (max-width: 1023px) {
+    height: 48px;
+  }
+  &:hover {
+    transition: all 0.3s ease;
+    color: var(--color-gold);
+    border-color: var(--color-gold);
+    .select2-chosen {
+      color: var(--color-gold);
+      transition: all 0.3s ease;
+    }
+    .select2-arrow {
+      background-image: url("../img/arrow-down-gold.svg");
+    }
+  }
+}
+
+.select2-chosen {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  color: #002B45;
+}
+
+.select2-container .select2-choice .select2-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 11px;
+  background-image: url("../img/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: 23px 11px;
+  background-color: transparent;
+  border: 0;
+  position: static;
+}
+
+.select2-container .select2-choice .select2-arrow b {
+  display: none;
+}
+
+.select2-container {
+  &.select2-dropdown-open {
+    .select2-choice .select2-arrow {
+      background-image: url("../img/arrow-up.svg");
+    }
+    .select2-choice {
+      background: #002B45;
+    }
+    .select2-chosen {
+      color: #fff;
+    }
+  }
+}
+
+.select2-results .select2-result-label {
+  .wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #002B45;
+    &::before {
+      content:"";
+      border: 1px solid #002B45;
+      border-radius: 3px;
+      min-width: 14px;
+      height: 14px;
+      display: block;
+    }
+    &.checked {
+      &::before {
+        background-image: url("../img/check.svg");
+        background-repeat: no-repeat;
+        background-size: 8px auto;
+        background-position: center;
+      }
+    }
+  }
+}
+
+.select2-results .select2-highlighted {
+  background-color: #002B45;
+  .wrap {
+    color: #fff;
+    &::before {
+      border-color: #fff;
+      background-image: url("../img/check-white.svg");
+    }
+    &.checked {
+      &::before {
+        border-color: #fff;
+        background-image: url("../img/check-white.svg");
+      }
+    }
+  }
+}
